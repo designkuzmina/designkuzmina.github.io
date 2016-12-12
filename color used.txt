@@ -1,0 +1,5 @@
+#ffffff
+#f1f1f1
+#a5a5a5
+#1c1d21
+#95c5ce

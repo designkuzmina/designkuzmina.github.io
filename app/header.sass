@@ -1,0 +1,199 @@
+@import "bourbon"
+@import "sass/vars"
+@import "sass/base"
+
+//First screen styles
+h1, h2, h3, h4, h5, h6,
+.h1, .h2,  .h3, .h4, .h5, .h6
+	font-family: "Raleway", sans-serif
+	text-transform: uppercase
+
+h1, h2
+.h1, h2
+	font-size: em(26)
+	font-weight: bold
+	line-height: 1.15
+	color: $text_color
+
+h3,
+.h3
+	font-size: em(18px)
+	font-weight: normal
+	line-height: 1.15
+	color: $grey
+	+kerning(2)
+h4,
+.h4	
+	font-family: "RalewayBold", sans-serif
+	color: $text-color
+	line-height: 1.15
+	font-size: em(16px)
+
+button,
+.button
+	font-size: em(14px)
+	padding: 10px 20px
+	color: #fff
+	text-transform: uppercase
+	text-decoration: none
+	background-color: #accent
+	border: none
+	bottom: 10px 	
+
+a
+	font-size: em(14)
+	font-family: "Raleway", sans-serif	
+	font-weight: normal
+	color: $text_color
+	+mt(.5s)
+	&:hover
+		color: $accent
+		text-decoration: none
+
+p
+	font-family: "Raleway", sans-serif
+
+.main_head
+	background-image: url(img/bg.jpg)
+	background-size: cover
+	background-position: top center
+	min-height: 100vh
+	overflow: hidden
+	
+.text_center
+	text-align: center
+
+.hidden
+	display: none
+
+.head_name
+	padding-top: 40px
+	padding-bottom: 20px
+	background-color: #FFF
+
+.head_line
+	border-bottom: 1px solid $grey
+	background-color: #FFF
+
+.toggle_mnu 
+	display: block
+	width: 28px
+	height: 28px
+	top: 20px
+	position: fixed
+	right: 15px
+	z-index: 200
+
+	span:after, span:before 
+		content: ""
+		position: absolute
+		left: 0
+		top: 9px
+
+	span:after
+		top: 18px
+
+	span 
+		position: relative
+		display: block
+
+	span, span:after, span:before
+		width: 100%
+		height: 2px
+		background-color: $grey
+		transition: all 0.3s
+		backface-visibility: hidden
+		border-radius: 2px
+
+
+	&.on span 
+		background-color: transparent
+
+	&.on span:before 
+		transform: rotate(45deg) translate(-1px, 0px)
+
+	&.on span:after 
+		transform: rotate(-45deg) translate(6px, -7px)	
+
+.main_mnu
+	background-color: #FFF
+	text-align: center
+	font-size: em(18px)
+	ul
+		list-style-type: none
+		text-transform: uppercase
+		padding: 0
+		margin: 0	
+		li
+			display: inline-block
+			> a
+				display: block
+				padding: 20px 20px
+				color: $text_color
+				+mt(.5s)
+				&:hover
+					color: $accent
+			&.active
+				a
+					color: #414e5b
+					text-decoration: underline
+
+.hidden_mnu
+	background-color: $accent
+	display: none
+	position: relative
+	ul
+		text-transform: uppercase
+		padding: 10 0
+		margin: 0	
+		li
+			display: block
+			> a
+				display: block
+				padding: 10px 0px
+				color: $text_color
+				+mt(.5s)
+				&:hover
+					color: $accent
+			&.active
+				a
+					color: #414e5b
+					text-decoration: underline
+
+.top_wrapper
+	display: table
+	width: 100%
+	height: 100%
+	position: absolute
+
+	top: 0
+	left: 0
+	z-index: 10
+	.top_descr
+		display: table-row
+		.top_centr
+			display: table-cell
+			text-align: center
+			vertical-align: middle
+	.top_text
+		display: inline-block
+		margin-bottom: 20px
+		p
+			color: #fff
+			display: block
+			font-family: "1Isadora M Bold", sans-serif
+			font-weight: bold
+			font-size: em(48px)
+			margin: 10px
+	.heade_button
+
+		background-color: transparent
+		border: 1px solid #fff
+		>a
+			
+			+mt(.5s)
+			&:hover
+				color: $accent
+				text-decoration: none		
+
+

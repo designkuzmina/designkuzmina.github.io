@@ -1,0 +1,115 @@
+@import "bourbon"
+@import "vars"
+@import "libs"
+
+//Load Libs SASS
+@import "app/libs/font-awesome/css/font-awesome.sass"
+//Custom styles here
+.s_wide
+	padding: 60px 0
+
+.s_dark
+	padding: 60px 0
+	background-color: $accent
+	color: #fff
+
+.s_grey
+	padding: 80px 0
+	background-color: $grey
+	color: #fff	
+
+.wrap_about
+	position: relative
+	display: block
+	text-align: center
+	h3
+		font-size: em(16px)
+		text-align: center
+		text-transform: uppercase
+		margin: 0 0 15px
+		letter-spacing: 1px
+
+		&::before
+				content: ''
+				position: absolute
+				top: 90px
+				bottom: 0
+				height: 1px
+				width: 20%
+				left: 40%
+				background-color: $grey
+					
+	.personal_header
+		font-size: 13px
+		text-align: left
+		margin-bottom: 30px
+		color: #555
+		h4
+			text-align: left
+
+
+.wrap_content
+	padding: 60px
+	h3
+		text-align: center 
+		padding-bottom: 20px
+
+.hobby
+		color: $accent	
+
+.s_descr_wrap
+	text-align: center
+	.s_descr
+		display: inline-block
+		text-transform: uppercase
+		font-size: 12px
+		position: relative
+		margin-bottom: 130px
+		font-weight: 600
+		&::after
+			content: ""
+			height: 1px
+			left: 50%
+			margin-left: -75px
+			margin-top: 60px
+			position: absolute
+			width: 150px
+.person
+	text-align: center
+	margin-bottom: 35px
+	img
+		max-width: 180px
+		min-height: 180px
+		display: inline-block
+		border-radius: 50%
+
+.s_about
+	p
+		margin-bottom: 25px
+	ul,
+	li
+		margin: 0
+		padding: 0
+		list-style-type: none
+	li
+		margin-bottom: 10px
+	
+	
+.social_wrap
+	ul
+		li
+			display: inline-block
+			a
+				.fa
+					width: 27px
+					height: 27px
+					margin: 4px
+					font-size: em(16px)
+					text-align: center
+					line-height: 1.712
+					background-color: $accent
+					color: #fff
+					border-radius: 50%
+
+
+@import "media"

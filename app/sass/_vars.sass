@@ -1,0 +1,13 @@
+@import "bourbon"
+
+$default-font: "RalewayRegular", sans-serif
+$text_color: #1c1d21	
+$accent: #95c5cf
+$grey: #a5a5a5
+$bg_light: #95c5cf
+ 
+=mt($time)
+	transition: all $time ease
+
+@mixin kerning($kerning)
+	letter-spacing: $kerning + px	
